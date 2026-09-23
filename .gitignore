@@ -1,0 +1,4 @@
+*.xlsx
+*.xlsm
+test/*.json
+.impeccable/
