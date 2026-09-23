@@ -388,7 +388,7 @@ const getSig = () => JSON.stringify(changeList().map((c) => [c.row, c.col, c.v])
 
 function updateHeader() {
   const cur = FILES.find((f) => f.id === CUR);
-  $('#hdr-job').textContent = S ? `${cur?.label || S.meta.job || 'Timesheet'}${FILES.length > 1 ? ' ▾' : ''}` : 'Timesheet';
+  $('#hdr-job').textContent = S ? `${cur?.label || S.meta.job || 'Novelis'}${FILES.length > 1 ? ' ▾' : ''}` : 'Novelis';
   $('#hdr-sub').textContent = S ? `${S.meta.job ? S.meta.job + ' · ' : ''}${S.meta.location} · ${mdy(S.meta.weeks[0])} – ${mdy(addDays(S.meta.weeks.at(-1), 6))}` : '';
   const n = S ? changeList().length : 0;
   const d = $('#hdr-dirty');

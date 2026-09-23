@@ -1,7 +1,7 @@
 {
-  "name": "Caster Timesheet",
-  "short_name": "Timesheet",
-  "description": "Captura de horas y costos del timesheet CASTER (Novelis Bay Minette)",
+  "name": "Novelis",
+  "short_name": "Novelis",
+  "description": "Captura de horas y costos de los timesheets de Novelis Bay Minette",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
