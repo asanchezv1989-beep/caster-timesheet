@@ -3,7 +3,7 @@
 // El Client ID sale de la app registrada en Microsoft Entra; se puede pegar en la
 // pestaña Archivo (se guarda en este dispositivo) o fijar en CLIENT_ID.
 
-const CLIENT_ID = '';
+const CLIENT_ID = '191f59ed-6671-4ca7-b327-46b1bb57e3f1'; // app "Novelis" registrada en Entra (Southern Welding)
 const SCOPES = ['Files.ReadWrite', 'User.Read'];
 const GRAPH = 'https://graph.microsoft.com/v1.0';
 
