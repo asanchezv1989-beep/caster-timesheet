@@ -6,6 +6,8 @@
 const CLIENT_ID = '191f59ed-6671-4ca7-b327-46b1bb57e3f1'; // app "Novelis" registrada en Entra (Southern Welding)
 const SCOPES = ['Files.ReadWrite', 'User.Read'];
 const GRAPH = 'https://graph.microsoft.com/v1.0';
+// directorio de Southern Welding / Elite (la app se registró como single-tenant)
+const TENANT = 'b5ad8c7e-bb54-4b59-af47-dd4289365c88';
 
 let pca = null;
 let account = null;
@@ -39,7 +41,7 @@ export async function init() {
   await loadMsal();
   if (!pca) {
     pca = new globalThis.msal.PublicClientApplication({
-      auth: { clientId: clientId(), authority: 'https://login.microsoftonline.com/organizations', redirectUri: redirectUri() },
+      auth: { clientId: clientId(), authority: 'https://login.microsoftonline.com/' + TENANT, redirectUri: redirectUri() },
       cache: { cacheLocation: 'localStorage' },
     });
     await pca.initialize();

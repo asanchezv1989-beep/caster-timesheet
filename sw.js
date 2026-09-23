@@ -1,5 +1,5 @@
 // Red primero, caché de respaldo: funciona sin internet y toma actualizaciones solo.
-const CACHE = 'caster-ts-v5';
+const CACHE = 'caster-ts-v6';
 const SHELL = ['./', 'index.html', 'styles.css', 'manifest.webmanifest', 'vendor/jszip.min.js',
   'js/app.js', 'js/calc.js', 'js/xlsx.js', 'js/db.js', 'js/i18n.js', 'js/rules.js', 'js/graph.js', 'vendor/msal-browser.min.js', 'js/colref.js', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/mark.png'];
 self.addEventListener('install', (e) => {
